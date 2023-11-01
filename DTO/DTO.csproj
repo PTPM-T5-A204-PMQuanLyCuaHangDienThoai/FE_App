@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7B23A9FF-CFD0-46D0-869B-4DB1F56D5865}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DTO</RootNamespace>
+    <AssemblyName>DTO</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FSharp.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\FSharp.Core.5.0.1\lib\netstandard2.0\FSharp.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="FSharp.Data, Version=6.3.0.0, Culture=neutral, PublicKeyToken=49286adf818aa259, processorArchitecture=MSIL">
+      <HintPath>..\packages\FSharp.Data.6.3.0\lib\netstandard2.0\FSharp.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="FSharp.Data.Csv.Core, Version=6.3.0.0, Culture=neutral, PublicKeyToken=49286adf818aa259, processorArchitecture=MSIL">
+      <HintPath>..\packages\FSharp.Data.Csv.Core.6.3.0\lib\netstandard2.0\FSharp.Data.Csv.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="FSharp.Data.Html.Core, Version=6.3.0.0, Culture=neutral, PublicKeyToken=49286adf818aa259, processorArchitecture=MSIL">
+      <HintPath>..\packages\FSharp.Data.Html.Core.6.3.0\lib\netstandard2.0\FSharp.Data.Html.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="FSharp.Data.Http, Version=6.3.0.0, Culture=neutral, PublicKeyToken=49286adf818aa259, processorArchitecture=MSIL">
+      <HintPath>..\packages\FSharp.Data.Http.6.3.0\lib\netstandard2.0\FSharp.Data.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="FSharp.Data.Json.Core, Version=6.3.0.0, Culture=neutral, PublicKeyToken=49286adf818aa259, processorArchitecture=MSIL">
+      <HintPath>..\packages\FSharp.Data.Json.Core.6.3.0\lib\netstandard2.0\FSharp.Data.Json.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="FSharp.Data.Runtime.Utilities, Version=6.3.0.0, Culture=neutral, PublicKeyToken=49286adf818aa259, processorArchitecture=MSIL">
+      <HintPath>..\packages\FSharp.Data.Runtime.Utilities.6.3.0\lib\netstandard2.0\FSharp.Data.Runtime.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="FSharp.Data.WorldBank.Core, Version=6.3.0.0, Culture=neutral, PublicKeyToken=49286adf818aa259, processorArchitecture=MSIL">
+      <HintPath>..\packages\FSharp.Data.WorldBank.Core.6.3.0\lib\netstandard2.0\FSharp.Data.WorldBank.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="FSharp.Data.Xml.Core, Version=6.3.0.0, Culture=neutral, PublicKeyToken=49286adf818aa259, processorArchitecture=MSIL">
+      <HintPath>..\packages\FSharp.Data.Xml.Core.6.3.0\lib\netstandard2.0\FSharp.Data.Xml.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChucVuDTO.cs" />
+    <Compile Include="NguoiDungDTO.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
