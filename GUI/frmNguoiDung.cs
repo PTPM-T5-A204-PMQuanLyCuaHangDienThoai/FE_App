@@ -67,7 +67,7 @@ namespace GUI
             txtSDT.Text = String.Empty;
             txtEmail.Text = String.Empty;
             dtpNgaySinh.Value = DateTime.Now;
-            chkBiKhoa.Checked = false;
+            chkBiKhoa.Checked = true;
         }
         void showHideControl(bool t)
         {
@@ -85,11 +85,15 @@ namespace GUI
             gcDanhSach.DataSource = bll.getAll();
             gvDanhSach.OptionsBehavior.Editable = false;
         }
-        void loadChucVu()
+        public void loadChucVu()
         {
             cboChucVu.Properties.DataSource = chucVuBLL.getAll();
             cboChucVu.Properties.ValueMember = "id";
             cboChucVu.Properties.DisplayMember = "name";
+        }
+        public void setChucVu(String data)
+        {
+            cboChucVu.EditValue = data;
         }
         private bool IsEmailValid(string email)
         {
@@ -174,59 +178,73 @@ namespace GUI
 
             if (_them)
             {
-                //if (bll.ktraTrungTenDangNhap(txtTenDangNhap.Text) > 0)
-                //{
-                //    MessageBox.Show("Tên đăng nhập đã tồn tại.");
-                //    return;
-                //}
-                //if (bll.ktraTrungSDT(txtSDT.Text) > 0)
-                //{
-                //    MessageBox.Show("Số điện thoại đã được sử dụng.");
-                //    return;
-                //}
-                //if (bll.ktraTrungEmail(txtEmail.Text) > 0)
-                //{
-                //    MessageBox.Show("Email đã được sử dụng.");
-                //    return;
-                //}
+                if (bll.ktraTenDangNhap(txtTenDangNhap.Text) != null)
+                {
+                    MessageBox.Show("Tên đăng nhập đã tồn tại.");
+                    return;
+                }
+                if (bll.ktraSDT(txtSDT.Text) != null)
+                {
+                    MessageBox.Show("Số điện thoại đã được sử dụng.");
+                    return;
+                }
+                if (bll.ktraEmail(txtEmail.Text) != null)
+                {
+                    MessageBox.Show("Email đã được sử dụng.");
+                    return;
+                }
                 NguoiDungDTO a = new NguoiDungDTO();
-                a.id = 4;
+                //a.id = 4;
                 a.name = txtTen.Text;
                 a.TenDangNhap = txtTenDangNhap.Text;
                 a.MatKhau = txtTenDangNhap.Text;
-                a.NgaySinh = dtpNgaySinh.Value;
+                a.NgaySinh = DateTime.Parse(dtpNgaySinh.Value.ToString("yyyy-MM-dd HH:mm:ss"));
                 a.SDT = txtSDT.Text;
                 a.DiaChi = txtDiaChi.Text;
                 a.Email = txtEmail.Text;
-                a.NgayTao = DateTime.Now;
-                a.NgayThayDoi = DateTime.Now;
+                a.NgayTao = DateTime.Parse(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
+                a.NgayThayDoi = DateTime.Parse(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
                 a.HoatDong = chkBiKhoa.Checked;
                 a.idChucVu = cboChucVu.EditValue.ToString();
                 a.GioiTinh = rdbNam.Checked == true ? "Nam" : "Nữ";
                 a.Anh = selectedPath;
-                a.XacNhanMatKhau = a.MatKhau;
-                bll.insert(a);
+                a.MatKhau_confirmation = a.MatKhau;
+                if (!bll.insert(a))
+                {
+                    MessageBox.Show("Thêm thất bại.");
+                    return;
+                }
             }
             else
             {
-                //if (bll.ktraTrungTenDangNhap(txtTenDangNhap.Text) == 0)
-                //{
-                //    MessageBox.Show("Tên đăng nhập đã tồn tại.");
-                //    return;
-                //}
                 NguoiDungDTO a = bll.findItem(_ma);
-                a.TenDangNhap = txtTenDangNhap.Text;
+                if (bll.ktraTenDangNhap(txtTenDangNhap.Text) != null && a.TenDangNhap != txtTenDangNhap.Text)
+                {
+                    MessageBox.Show("Tên đăng nhập đã tồn tại.");
+                    return;
+                }
+                if (bll.ktraSDT(txtSDT.Text) != null && a.SDT != txtSDT.Text)
+                {
+                    MessageBox.Show("Số điện thoại đã được sử dụng.");
+                    return;
+                }
+                if (bll.ktraEmail(txtEmail.Text) != null && a.Email != txtEmail.Text)
+                {
+                    MessageBox.Show("Email đã được sử dụng.");
+                    return;
+                }
                 a.name = txtTen.Text;
+                a.TenDangNhap = txtTenDangNhap.Text;
+                a.NgaySinh = DateTime.Parse(dtpNgaySinh.Value.ToString("yyyy-MM-dd HH:mm:ss"));
                 a.SDT = txtSDT.Text;
                 a.DiaChi = txtDiaChi.Text;
                 a.Email = txtEmail.Text;
                 a.Anh = selectedPath;
-                a.NgaySinh = dtpNgaySinh.Value;
-                a.GioiTinh = rdbNam.Checked == true ? "Nam" : "Nữ";
-                a.NgayTao = DateTime.Now;
                 a.HoatDong = chkBiKhoa.Checked;
                 a.idChucVu = cboChucVu.EditValue.ToString();
-                a.XacNhanMatKhau = a.MatKhau;
+                a.GioiTinh = rdbNam.Checked == true ? "Nam" : "Nữ";
+                a.Anh = selectedPath;
+                a.MatKhau_confirmation = a.MatKhau;
                 bll.update(a);
             }
             _them = false;
@@ -279,10 +297,10 @@ namespace GUI
 
         private void btnChonAnh_Click(object sender, EventArgs e)
         {
-            selectedPath = pictureAddress + OpenFile();
-            if (!String.IsNullOrEmpty(selectedPath) && File.Exists(selectedPath))
+            selectedPath = OpenFile();
+            if (!String.IsNullOrEmpty(pictureAddress + selectedPath) && File.Exists(pictureAddress + selectedPath))
             {
-                imgAnhDaiDien.Image = Image.FromFile(selectedPath);
+                imgAnhDaiDien.Image = Image.FromFile(pictureAddress + selectedPath);
             }
             else
             {
@@ -291,13 +309,24 @@ namespace GUI
 
         }
 
+        private void btnThemChucVu_Click(object sender, EventArgs e)
+        {
+            frmChucVu frm = new frmChucVu();
+            frm.ShowDialog();
+        }
+
         private void btnResetMatKhau_Click(object sender, EventArgs e)
         {
+            NguoiDungDTO a = bll.findItem(_ma);
+            if (a == null)
+            {
+                MessageBox.Show("Vui lòng chọn người dùng cần đổi mật khẩu.");
+                return;
+            }
             if (MessageBox.Show("Bạn có chắc chắn muốn khôi phục mật khẩu mặc định của tài khoản: " + txtTenDangNhap.Text, "Xác nhận", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                NguoiDungDTO a = bll.findItem(_ma);
-                a.MatKhau = BCrypt.Net.BCrypt.HashPassword(txtTenDangNhap.Text);
-                bll.update(a);
+                a.MatKhau = a.MatKhau_confirmation = txtTenDangNhap.Text;
+                bll.resetMatKhau(a);
                 loadData();
                 MessageBox.Show("Khôi phục mật khẩu thành công.\nMật khẩu mới là tên đăng nhập.");
             }

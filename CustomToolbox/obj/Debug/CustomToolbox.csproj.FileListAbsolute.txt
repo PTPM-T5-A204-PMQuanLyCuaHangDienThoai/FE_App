@@ -1,0 +1,6 @@
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_AppCuaHangDienThoai\CustomToolbox\bin\Debug\CustomToolbox.dll
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_AppCuaHangDienThoai\CustomToolbox\bin\Debug\CustomToolbox.pdb
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_AppCuaHangDienThoai\CustomToolbox\obj\Debug\CustomToolbox.csproj.AssemblyReference.cache
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_AppCuaHangDienThoai\CustomToolbox\obj\Debug\CustomToolbox.csproj.CoreCompileInputs.cache
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_AppCuaHangDienThoai\CustomToolbox\obj\Debug\CustomToolbox.dll
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_AppCuaHangDienThoai\CustomToolbox\obj\Debug\CustomToolbox.pdb

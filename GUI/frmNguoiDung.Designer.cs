@@ -56,9 +56,9 @@
             this.radioGroup1 = new DevExpress.XtraEditors.RadioGroup();
             this.dtpNgaySinh = new System.Windows.Forms.DateTimePicker();
             this.txtEmail = new System.Windows.Forms.TextBox();
-            this.txtSDT = new System.Windows.Forms.TextBox();
             this.txtTen = new System.Windows.Forms.TextBox();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.txtSDT = new CustomToolbox.NumberBox();
             this.cboChucVu = new DevExpress.XtraEditors.SearchLookUpEdit();
             this.searchLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.btnThemChucVu = new DevExpress.XtraEditors.SimpleButton();
@@ -284,9 +284,9 @@
             this.chkBiKhoa.AutoSize = true;
             this.chkBiKhoa.Location = new System.Drawing.Point(387, 117);
             this.chkBiKhoa.Name = "chkBiKhoa";
-            this.chkBiKhoa.Size = new System.Drawing.Size(60, 17);
+            this.chkBiKhoa.Size = new System.Drawing.Size(76, 17);
             this.chkBiKhoa.TabIndex = 19;
-            this.chkBiKhoa.Text = "Bị khóa";
+            this.chkBiKhoa.Text = "Hoạt động";
             this.chkBiKhoa.UseVisualStyleBackColor = true;
             // 
             // rdbNu
@@ -333,13 +333,6 @@
             this.txtEmail.Size = new System.Drawing.Size(279, 21);
             this.txtEmail.TabIndex = 13;
             // 
-            // txtSDT
-            // 
-            this.txtSDT.Location = new System.Drawing.Point(229, 86);
-            this.txtSDT.Name = "txtSDT";
-            this.txtSDT.Size = new System.Drawing.Size(218, 21);
-            this.txtSDT.TabIndex = 12;
-            // 
             // txtTen
             // 
             this.txtTen.Location = new System.Drawing.Point(229, 32);
@@ -349,6 +342,7 @@
             // 
             // groupControl1
             // 
+            this.groupControl1.Controls.Add(this.txtSDT);
             this.groupControl1.Controls.Add(this.cboChucVu);
             this.groupControl1.Controls.Add(this.btnThemChucVu);
             this.groupControl1.Controls.Add(this.txtDiaChi);
@@ -363,7 +357,6 @@
             this.groupControl1.Controls.Add(this.radioGroup1);
             this.groupControl1.Controls.Add(this.dtpNgaySinh);
             this.groupControl1.Controls.Add(this.txtEmail);
-            this.groupControl1.Controls.Add(this.txtSDT);
             this.groupControl1.Controls.Add(this.txtTen);
             this.groupControl1.Controls.Add(this.txtTenDangNhap);
             this.groupControl1.Controls.Add(this.label7);
@@ -378,6 +371,13 @@
             this.groupControl1.Size = new System.Drawing.Size(901, 188);
             this.groupControl1.TabIndex = 6;
             this.groupControl1.Text = "Thông tin:";
+            // 
+            // txtSDT
+            // 
+            this.txtSDT.Location = new System.Drawing.Point(229, 86);
+            this.txtSDT.Name = "txtSDT";
+            this.txtSDT.Size = new System.Drawing.Size(218, 21);
+            this.txtSDT.TabIndex = 31;
             // 
             // cboChucVu
             // 
@@ -404,6 +404,7 @@
             this.btnThemChucVu.Name = "btnThemChucVu";
             this.btnThemChucVu.Size = new System.Drawing.Size(23, 21);
             this.btnThemChucVu.TabIndex = 29;
+            this.btnThemChucVu.Click += new System.EventHandler(this.btnThemChucVu_Click);
             // 
             // txtDiaChi
             // 
@@ -560,7 +561,9 @@
             this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.toolStrip1);
             this.Name = "frmNguoiDung";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "NGƯỜI DÙNG";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmNguoiDung_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
@@ -606,7 +609,6 @@
         private DevExpress.XtraEditors.RadioGroup radioGroup1;
         private System.Windows.Forms.DateTimePicker dtpNgaySinh;
         private System.Windows.Forms.TextBox txtEmail;
-        private System.Windows.Forms.TextBox txtSDT;
         private System.Windows.Forms.TextBox txtTen;
         private DevExpress.XtraEditors.GroupControl groupControl1;
         private System.Windows.Forms.TextBox txtTenDangNhap;
@@ -631,5 +633,6 @@
         private DevExpress.XtraEditors.SimpleButton btnThemChucVu;
         private DevExpress.XtraEditors.SearchLookUpEdit cboChucVu;
         private DevExpress.XtraGrid.Views.Grid.GridView searchLookUpEdit1View;
+        private CustomToolbox.NumberBox txtSDT;
     }
 }

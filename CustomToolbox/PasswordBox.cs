@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace CustomToolbox
 {
-    public class Class1
+    public class PasswordBox: System.Windows.Forms.TextBox
     {
+        public PasswordBox()
+        {
+            this.UseSystemPasswordChar = true;
+        }
     }
 }

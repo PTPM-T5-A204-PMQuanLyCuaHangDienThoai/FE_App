@@ -16,6 +16,7 @@ namespace GUI
         bool _them;
         String _ma;
         ChucVuBLL bll;
+        frmNguoiDung objNguoiDung = (frmNguoiDung)Application.OpenForms["frmNguoiDung"];
         void _enable(bool t)
         {
             txtid.Enabled = t;
@@ -134,6 +135,16 @@ namespace GUI
             {
                 _ma = txtid.Text = gvDanhSach.GetFocusedRowCellValue("id").ToString();
                 txtTen.Text = gvDanhSach.GetFocusedRowCellValue("name").ToString();
+            }
+        }
+
+        private void gcDanhSach_DoubleClick(object sender, EventArgs e)
+        {
+            if(objNguoiDung != null && gvDanhSach.RowCount > 0)
+            {
+                objNguoiDung.loadChucVu();
+                objNguoiDung.setChucVu(gvDanhSach.GetFocusedRowCellValue("id").ToString());
+                this.Close();
             }
         }
     }

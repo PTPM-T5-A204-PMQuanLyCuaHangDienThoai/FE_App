@@ -43,6 +43,8 @@
   <ItemGroup>
     <Compile Include="ChucVuDAL.cs" />
     <Compile Include="Connect.cs" />
+    <Compile Include="CuaHangDAL.cs" />
+    <Compile Include="DanhMucDAL.cs" />
     <Compile Include="NguoiDungDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

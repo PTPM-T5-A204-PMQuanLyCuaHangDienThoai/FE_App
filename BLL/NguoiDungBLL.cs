@@ -41,5 +41,25 @@ namespace BLL
         {
             return dal.findItem(data) == null ? false : true;
         }
+        public bool resetMatKhau(NguoiDungDTO data)
+        {
+            return dal.resetMatKhau(data);
+        }
+        public NguoiDungDTO ktraTenDangNhap(String data)
+        {
+            return dal.ktraTenDangNhap(data);
+        }
+        public NguoiDungDTO ktraSDT(String data)
+        {
+            return dal.ktraSDT(data);
+        }
+        public NguoiDungDTO ktraEmail(String data)
+        {
+            return dal.ktraEmail(data);
+        }
+        public bool checkLogin(NguoiDungDTO data)
+        {
+            return dal.checkLogin(data);
+        }
     }
 }

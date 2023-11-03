@@ -70,3 +70,11 @@ D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_AppCuaHangDi
 D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_AppCuaHangDienThoai\GUI\obj\Debug\GUI.frmNguoiDung.resources
 D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_AppCuaHangDienThoai\GUI\bin\Debug\BLL.dll.config
 D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_AppCuaHangDienThoai\GUI\bin\Debug\DAL.dll.config
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_AppCuaHangDienThoai\GUI\bin\Debug\CustomToolbox.dll
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_AppCuaHangDienThoai\GUI\bin\Debug\CustomToolbox.pdb
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_AppCuaHangDienThoai\GUI\obj\Debug\GUI.frmDangNhap.resources
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_AppCuaHangDienThoai\GUI\bin\Debug\DevExpress.XtraNavBar.v22.2.dll
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_AppCuaHangDienThoai\GUI\bin\Debug\DevExpress.XtraNavBar.v22.2.xml
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_AppCuaHangDienThoai\GUI\obj\Debug\GUI.frmMain.resources
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_AppCuaHangDienThoai\GUI\obj\Debug\GUI.frmDanhMuc.resources
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_AppCuaHangDienThoai\GUI\obj\Debug\GUI.frmCuaHang.resources

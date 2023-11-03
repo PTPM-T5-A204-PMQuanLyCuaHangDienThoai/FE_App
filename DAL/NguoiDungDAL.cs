@@ -35,5 +35,25 @@ namespace DAL
         {
             return _cnn.delete(Connect.apiUrl + "NguoiDung/" + data);
         }
+        public bool resetMatKhau(NguoiDungDTO data)
+        {
+            return _cnn.update(Connect.apiUrl + "NguoiDung/" + data.id + "/resetMatKhau", data);
+        }
+        public NguoiDungDTO ktraTenDangNhap(String data)
+        {
+            return _cnn.show(Connect.apiUrl + "NguoiDung/" + data + "/checkDuplicateTenDangNhap");
+        }
+        public NguoiDungDTO ktraSDT(String data)
+        {
+            return _cnn.show(Connect.apiUrl + "NguoiDung/" + data + "/checkDuplicateSDT");
+        }
+        public NguoiDungDTO ktraEmail(String data)
+        {
+            return _cnn.show(Connect.apiUrl + "NguoiDung/" + data + "/checkDuplicateEmail");
+        }
+        public bool checkLogin(NguoiDungDTO data)
+        {
+            return _cnn.checkLogin(Connect.apiUrl + "NguoiDung/checkLogin", data);
+        }
     }
 }

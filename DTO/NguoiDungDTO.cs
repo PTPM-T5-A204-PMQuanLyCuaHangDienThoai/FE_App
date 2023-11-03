@@ -12,7 +12,7 @@ namespace DTO
         public String name { get; set; }
         public String TenDangNhap { get; set; }
         public String MatKhau { get; set; }
-        public String XacNhanMatKhau { get; set; }
+        public String MatKhau_confirmation { get; set; }
         public DateTime NgaySinh { get; set; }
         public String SDT { get; set; }
         public String DiaChi { get; set; }
