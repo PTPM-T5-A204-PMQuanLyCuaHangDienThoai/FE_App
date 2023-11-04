@@ -1,4 +1,5 @@
 ﻿using BLL;
+using DTO;
 using DevExpress.XtraEditors;
 using DevExpress.XtraNavBar;
 using System;
@@ -18,10 +19,14 @@ namespace GUI
         NavBarGroup navGroup;
         frmNguoiDung objNguoiDung;
         frmDanhMuc objDanhMuc;
+        frmNhaCungCap objNhaCungCap;
         frmCuaHang objCuaHang;
+        frmSanPham objSanPham;
+        frmDoiMatKhau objDoiMatKhau;
         frmPhanQuyen objPhanQuyen;
 
         PhanQuyenBLL _phanQuyen;
+        QuyenBLL _quyen;
         void addnavItem(String tag, String name)
         {
             NavBarItem navItem = new NavBarItem(name);
@@ -37,18 +42,22 @@ namespace GUI
             navGroup.ImageOptions.LargeImageIndex = 0;
             navMain.Groups.Add(navGroup);
 
-            addnavItem("NguoiDung", "Người dùng");
-            addnavItem("DanhMuc", "Danh mục");
-            addnavItem("CuaHang", "Cửa hàng");
-            addnavItem("TinTuc", "Tin tức");
-            addnavItem("SanPham", "Sản phẩm");
-            addnavItem("DonHang", "Đơn hàng");
-            addnavItem("NhapHang", "Nhập hàng");
+            //addnavItem("NguoiDung", "Người dùng");
+            //addnavItem("DanhMuc", "Danh mục");
+            //addnavItem("NhaCungCap", "Nhà cung cấp");
+            //addnavItem("CuaHang", "Cửa hàng");
+            //addnavItem("SanPham", "Sản phẩm");
+            //addnavItem("DonHang", "Đơn hàng");
+            //addnavItem("NhapHang", "Nhập hàng");
 
-            addnavItem("DoiMatKhau", "Đổi mật khẩu");
+            //addnavItem("DoiMatKhau", "Đổi mật khẩu");
 
-            addnavItem("PhanQuyen", "Phân Quyền");
+            //addnavItem("PhanQuyen", "Phân Quyền");
 
+            foreach (QuyenDTO item in _quyen.getAll())
+            {
+                addnavItem(item.id, item.name);
+            }
 
 
             navMain.Groups[navGroup.Name].Expanded = true;
@@ -61,8 +70,9 @@ namespace GUI
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-            leftMenu();
             _phanQuyen = new PhanQuyenBLL();
+            _quyen = new QuyenBLL();
+            leftMenu();
         }
 
         private void navMain_LinkClicked(object sender, NavBarLinkEventArgs e)
@@ -107,6 +117,25 @@ namespace GUI
                         }
                         break;
                     }
+                case "NhaCungCap":
+                    {
+                        if (!_phanQuyen.ktraQuyen(e.Link.Item.Tag.ToString()))
+                        {
+                            MessageBox.Show("Bạn không có quyền truy cập chức năng này");
+                            return;
+                        }
+                        if (objNhaCungCap == null || objNhaCungCap.IsDisposed)
+                        {
+                            objNhaCungCap = new frmNhaCungCap();
+                            objNhaCungCap.MdiParent = this;
+                            objNhaCungCap.Show();
+                        }
+                        else
+                        {
+                            objNhaCungCap.Activate();
+                        }
+                        break;
+                    }
                 case "CuaHang":
                     {
                         if (!_phanQuyen.ktraQuyen(e.Link.Item.Tag.ToString()))
@@ -124,6 +153,46 @@ namespace GUI
                         {
                             objCuaHang.Activate();
                         }
+                        break;
+                    }
+                case "SanPham":
+                    {
+                        if (!_phanQuyen.ktraQuyen(e.Link.Item.Tag.ToString()))
+                        {
+                            MessageBox.Show("Bạn không có quyền truy cập chức năng này");
+                            return;
+                        }
+                        if (objSanPham == null || objSanPham.IsDisposed)
+                        {
+                            objSanPham = new frmSanPham();
+                            objSanPham.MdiParent = this;
+                            objSanPham.Show();
+                        }
+                        else
+                        {
+                            objSanPham.Activate();
+                        }
+                        break;
+                    }
+                case "DoiMatKhau":
+                    {
+                        //if (!_phanQuyen.ktraQuyen(e.Link.Item.Tag.ToString()))
+                        //{
+                        //    MessageBox.Show("Bạn không có quyền truy cập chức năng này");
+                        //    return;
+                        //}
+                        //if (objDoiMatKhau == null || objDoiMatKhau.IsDisposed)
+                        //{
+                        //    objDoiMatKhau = new frmDoiMatKhau();
+                        //    objDoiMatKhau.MdiParent = this;
+                        //    objDoiMatKhau.Show();
+                        //}
+                        //else
+                        //{
+                        //    objDoiMatKhau.Activate();
+                        //}
+                        objDoiMatKhau = new frmDoiMatKhau();
+                        objDoiMatKhau.ShowDialog();
                         break;
                     }
                 case "PhanQuyen":

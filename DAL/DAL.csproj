@@ -46,11 +46,13 @@
     <Compile Include="CuaHangDAL.cs" />
     <Compile Include="DanhMucDAL.cs" />
     <Compile Include="NguoiDungDAL.cs" />
+    <Compile Include="NhaCungCapDAL.cs" />
     <Compile Include="NhomDAL.cs" />
     <Compile Include="NhomNguoiDungDAL.cs" />
     <Compile Include="PhanQuyenDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuyenDAL.cs" />
+    <Compile Include="SanPhamDAL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CustomLibrary\CustomLibrary.csproj">
