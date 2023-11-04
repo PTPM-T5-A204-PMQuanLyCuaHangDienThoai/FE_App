@@ -196,5 +196,39 @@ namespace CustomLibrary
             }
 
         }
+        public String ktraQuyen(String apiUrl)
+        {
+            try
+            {
+                using (HttpClient client = new HttpClient())
+                {
+                    HttpResponseMessage response = client.GetAsync(apiUrl).Result;
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        // Đọc dữ liệu từ phản hồi
+                        string responseData = response.Content.ReadAsStringAsync().Result;
+
+                        return responseData;
+                    }
+                    else
+                    {
+                        // Xử lý khi yêu cầu không thành công
+                        Console.WriteLine("Yêu cầu không thành công. Mã trạng thái: " + response.StatusCode);
+                        return null;
+                    }
+                }
+            }
+            catch (HttpRequestException ex)
+            {
+                Console.WriteLine("Yêu cầu không thành công. Lỗi: " + ex.Message);
+                return null;
+            }
+            catch
+            {
+                return null;
+            }
+
+        }
     }
 }

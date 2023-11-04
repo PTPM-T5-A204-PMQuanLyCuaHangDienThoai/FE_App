@@ -1,4 +1,5 @@
-﻿using DevExpress.XtraEditors;
+﻿using BLL;
+using DevExpress.XtraEditors;
 using DevExpress.XtraNavBar;
 using System;
 using System.Collections.Generic;
@@ -18,6 +19,9 @@ namespace GUI
         frmNguoiDung objNguoiDung;
         frmDanhMuc objDanhMuc;
         frmCuaHang objCuaHang;
+        frmPhanQuyen objPhanQuyen;
+
+        PhanQuyenBLL _phanQuyen;
         void addnavItem(String tag, String name)
         {
             NavBarItem navItem = new NavBarItem(name);
@@ -43,6 +47,8 @@ namespace GUI
 
             addnavItem("DoiMatKhau", "Đổi mật khẩu");
 
+            addnavItem("PhanQuyen", "Phân Quyền");
+
 
 
             navMain.Groups[navGroup.Name].Expanded = true;
@@ -56,6 +62,7 @@ namespace GUI
         private void frmMain_Load(object sender, EventArgs e)
         {
             leftMenu();
+            _phanQuyen = new PhanQuyenBLL();
         }
 
         private void navMain_LinkClicked(object sender, NavBarLinkEventArgs e)
@@ -64,11 +71,11 @@ namespace GUI
             {
                 case "NguoiDung":
                     {
-                        //if (!_phanQuyen.ktraQuyen(pnBanHang.Tag.ToString()))
-                        //{
-                        //    MessageBox.Show("Bạn không có quyền truy cập chức năng này");
-                        //    return;
-                        //}
+                        if (!_phanQuyen.ktraQuyen(e.Link.Item.Tag.ToString()))
+                        {
+                            MessageBox.Show("Bạn không có quyền truy cập chức năng này");
+                            return;
+                        }
                         if (objNguoiDung == null || objNguoiDung.IsDisposed)
                         {
                             objNguoiDung = new frmNguoiDung();
@@ -83,11 +90,11 @@ namespace GUI
                     }
                 case "DanhMuc":
                     {
-                        //if (!_phanQuyen.ktraQuyen(pnBanHang.Tag.ToString()))
-                        //{
-                        //    MessageBox.Show("Bạn không có quyền truy cập chức năng này");
-                        //    return;
-                        //}
+                        if (!_phanQuyen.ktraQuyen(e.Link.Item.Tag.ToString()))
+                        {
+                            MessageBox.Show("Bạn không có quyền truy cập chức năng này");
+                            return;
+                        }
                         if (objDanhMuc == null || objDanhMuc.IsDisposed)
                         {
                             objDanhMuc = new frmDanhMuc();
@@ -102,11 +109,11 @@ namespace GUI
                     }
                 case "CuaHang":
                     {
-                        //if (!_phanQuyen.ktraQuyen(pnBanHang.Tag.ToString()))
-                        //{
-                        //    MessageBox.Show("Bạn không có quyền truy cập chức năng này");
-                        //    return;
-                        //}
+                        if (!_phanQuyen.ktraQuyen(e.Link.Item.Tag.ToString()))
+                        {
+                            MessageBox.Show("Bạn không có quyền truy cập chức năng này");
+                            return;
+                        }
                         if (objCuaHang == null || objCuaHang.IsDisposed)
                         {
                             objCuaHang = new frmCuaHang();
@@ -116,6 +123,25 @@ namespace GUI
                         else
                         {
                             objCuaHang.Activate();
+                        }
+                        break;
+                    }
+                case "PhanQuyen":
+                    {
+                        if (!_phanQuyen.ktraQuyen(e.Link.Item.Tag.ToString()))
+                        {
+                            MessageBox.Show("Bạn không có quyền truy cập chức năng này");
+                            return;
+                        }
+                        if (objPhanQuyen == null || objPhanQuyen.IsDisposed)
+                        {
+                            objPhanQuyen = new frmPhanQuyen();
+                            objPhanQuyen.MdiParent = this;
+                            objPhanQuyen.Show();
+                        }
+                        else
+                        {
+                            objPhanQuyen.Activate();
                         }
                         break;
                     }

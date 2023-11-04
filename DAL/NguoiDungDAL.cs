@@ -55,5 +55,9 @@ namespace DAL
         {
             return _cnn.checkLogin(Connect.apiUrl + "NguoiDung/checkLogin", data);
         }
+        public List<NguoiDungDTO> getDataIsNotAddByGroup(String idNhom)
+        {
+            return _cnn.index(Connect.apiUrl + "NguoiDung/" + idNhom + "/getDataIsNotAddByGroup");
+        }
     }
 }

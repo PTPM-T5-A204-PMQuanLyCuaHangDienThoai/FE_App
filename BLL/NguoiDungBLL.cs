@@ -61,5 +61,9 @@ namespace BLL
         {
             return dal.checkLogin(data);
         }
+        public List<NguoiDungDTO> getDataIsNotAddByGroup(String idNhom)
+        {
+            return dal.getDataIsNotAddByGroup(idNhom);
+        }
     }
 }

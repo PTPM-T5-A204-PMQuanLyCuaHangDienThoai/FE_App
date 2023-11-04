@@ -78,3 +78,6 @@ D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_AppCuaHangDi
 D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_AppCuaHangDienThoai\GUI\obj\Debug\GUI.frmMain.resources
 D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_AppCuaHangDienThoai\GUI\obj\Debug\GUI.frmDanhMuc.resources
 D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_AppCuaHangDienThoai\GUI\obj\Debug\GUI.frmCuaHang.resources
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_AppCuaHangDienThoai\GUI\obj\Debug\GUI.frmNhom.resources
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_AppCuaHangDienThoai\GUI\obj\Debug\GUI.frmNhomNguoiDung.resources
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_AppCuaHangDienThoai\GUI\obj\Debug\GUI.frmPhanQuyen.resources
