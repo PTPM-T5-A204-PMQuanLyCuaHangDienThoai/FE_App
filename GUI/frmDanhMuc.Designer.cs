@@ -46,6 +46,9 @@
             this.btnLuu = new System.Windows.Forms.ToolStripButton();
             this.btnBoQua = new System.Windows.Forms.ToolStripButton();
             this.btnThoat = new System.Windows.Forms.ToolStripButton();
+            this.btnChonAnh = new DevExpress.XtraEditors.SimpleButton();
+            this.imgAnhDaiDien = new System.Windows.Forms.PictureBox();
+            this.Anh = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gvDanhSach)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gcDanhSach)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
@@ -53,13 +56,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgAnhDaiDien)).BeginInit();
             this.SuspendLayout();
             // 
             // gvDanhSach
             // 
             this.gvDanhSach.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.id,
-            this.name});
+            this.name,
+            this.Anh});
             this.gvDanhSach.GridControl = this.gcDanhSach;
             this.gvDanhSach.Name = "gvDanhSach";
             // 
@@ -85,7 +90,7 @@
             this.gcDanhSach.Location = new System.Drawing.Point(2, 23);
             this.gcDanhSach.MainView = this.gvDanhSach;
             this.gcDanhSach.Name = "gcDanhSach";
-            this.gcDanhSach.Size = new System.Drawing.Size(872, 330);
+            this.gcDanhSach.Size = new System.Drawing.Size(872, 233);
             this.gcDanhSach.TabIndex = 4;
             this.gcDanhSach.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvDanhSach});
@@ -95,14 +100,16 @@
             // 
             this.groupControl2.Controls.Add(this.gcDanhSach);
             this.groupControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupControl2.Location = new System.Drawing.Point(0, 112);
+            this.groupControl2.Location = new System.Drawing.Point(0, 209);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(876, 355);
+            this.groupControl2.Size = new System.Drawing.Size(876, 258);
             this.groupControl2.TabIndex = 8;
             this.groupControl2.Text = "Dữ liệu";
             // 
             // groupControl1
             // 
+            this.groupControl1.Controls.Add(this.btnChonAnh);
+            this.groupControl1.Controls.Add(this.imgAnhDaiDien);
             this.groupControl1.Controls.Add(this.txtTen);
             this.groupControl1.Controls.Add(this.txtid);
             this.groupControl1.Controls.Add(this.label2);
@@ -110,20 +117,20 @@
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupControl1.Location = new System.Drawing.Point(0, 25);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(876, 87);
+            this.groupControl1.Size = new System.Drawing.Size(876, 184);
             this.groupControl1.TabIndex = 7;
             this.groupControl1.Text = "Thông tin:";
             // 
             // txtTen
             // 
-            this.txtTen.Location = new System.Drawing.Point(231, 63);
+            this.txtTen.Location = new System.Drawing.Point(272, 71);
             this.txtTen.Name = "txtTen";
             this.txtTen.Size = new System.Drawing.Size(279, 21);
             this.txtTen.TabIndex = 11;
             // 
             // txtid
             // 
-            this.txtid.Location = new System.Drawing.Point(231, 32);
+            this.txtid.Location = new System.Drawing.Point(272, 40);
             this.txtid.Name = "txtid";
             this.txtid.Size = new System.Drawing.Size(279, 21);
             this.txtid.TabIndex = 10;
@@ -131,7 +138,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(147, 71);
+            this.label2.Location = new System.Drawing.Point(188, 79);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(78, 13);
             this.label2.TabIndex = 1;
@@ -140,7 +147,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(206, 40);
+            this.label1.Location = new System.Drawing.Point(247, 48);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(19, 13);
             this.label1.TabIndex = 0;
@@ -215,6 +222,32 @@
             this.btnThoat.Text = "Thoát";
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
+            // btnChonAnh
+            // 
+            this.btnChonAnh.Location = new System.Drawing.Point(35, 158);
+            this.btnChonAnh.Name = "btnChonAnh";
+            this.btnChonAnh.Size = new System.Drawing.Size(75, 23);
+            this.btnChonAnh.TabIndex = 23;
+            this.btnChonAnh.Text = "Chọn ảnh";
+            this.btnChonAnh.Click += new System.EventHandler(this.btnChonAnh_Click);
+            // 
+            // imgAnhDaiDien
+            // 
+            this.imgAnhDaiDien.Location = new System.Drawing.Point(12, 40);
+            this.imgAnhDaiDien.Name = "imgAnhDaiDien";
+            this.imgAnhDaiDien.Size = new System.Drawing.Size(124, 112);
+            this.imgAnhDaiDien.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.imgAnhDaiDien.TabIndex = 22;
+            this.imgAnhDaiDien.TabStop = false;
+            // 
+            // Anh
+            // 
+            this.Anh.Caption = "Ảnh";
+            this.Anh.FieldName = "Anh";
+            this.Anh.Name = "Anh";
+            this.Anh.Visible = true;
+            this.Anh.VisibleIndex = 2;
+            // 
             // frmDanhMuc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -238,6 +271,7 @@
             this.groupControl1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgAnhDaiDien)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -262,5 +296,8 @@
         private System.Windows.Forms.ToolStripButton btnThem;
         private System.Windows.Forms.ToolStripButton btnThoat;
         private System.Windows.Forms.ToolStrip toolStrip1;
+        private DevExpress.XtraEditors.SimpleButton btnChonAnh;
+        private System.Windows.Forms.PictureBox imgAnhDaiDien;
+        private DevExpress.XtraGrid.Columns.GridColumn Anh;
     }
 }

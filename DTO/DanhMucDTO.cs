@@ -10,5 +10,6 @@ namespace DTO
     {
         public String id { get; set; }
         public String name { get; set; }
+        public String Anh { get; set; }
     }
 }

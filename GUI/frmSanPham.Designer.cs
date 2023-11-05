@@ -60,6 +60,9 @@
             this.KhangNuoc = new DevExpress.XtraGrid.Columns.GridColumn();
             this.MoTa = new DevExpress.XtraGrid.Columns.GridColumn();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.txtHoTroMang = new CustomToolbox.NumberBox();
+            this.txtTanSoQuet = new CustomToolbox.NumberBox();
+            this.txtPin = new CustomToolbox.NumberBox();
             this.txtSoLuongTon = new CustomToolbox.NumberBox();
             this.txtGiaKhuyenMai = new CustomToolbox.NumberBox();
             this.txtGiaGoc = new CustomToolbox.NumberBox();
@@ -119,9 +122,6 @@
             this.btnLuu = new System.Windows.Forms.ToolStripButton();
             this.btnBoQua = new System.Windows.Forms.ToolStripButton();
             this.btnThoat = new System.Windows.Forms.ToolStripButton();
-            this.txtPin = new CustomToolbox.NumberBox();
-            this.txtTanSoQuet = new CustomToolbox.NumberBox();
-            this.txtHoTroMang = new CustomToolbox.NumberBox();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gcDanhSach)).BeginInit();
@@ -469,6 +469,27 @@
             this.groupControl1.TabIndex = 8;
             this.groupControl1.Text = "Thông tin:";
             // 
+            // txtHoTroMang
+            // 
+            this.txtHoTroMang.Location = new System.Drawing.Point(1154, 160);
+            this.txtHoTroMang.Name = "txtHoTroMang";
+            this.txtHoTroMang.Size = new System.Drawing.Size(165, 21);
+            this.txtHoTroMang.TabIndex = 89;
+            // 
+            // txtTanSoQuet
+            // 
+            this.txtTanSoQuet.Location = new System.Drawing.Point(1154, 129);
+            this.txtTanSoQuet.Name = "txtTanSoQuet";
+            this.txtTanSoQuet.Size = new System.Drawing.Size(165, 21);
+            this.txtTanSoQuet.TabIndex = 88;
+            // 
+            // txtPin
+            // 
+            this.txtPin.Location = new System.Drawing.Point(534, 129);
+            this.txtPin.Name = "txtPin";
+            this.txtPin.Size = new System.Drawing.Size(165, 21);
+            this.txtPin.TabIndex = 87;
+            // 
             // txtSoLuongTon
             // 
             this.txtSoLuongTon.Location = new System.Drawing.Point(220, 134);
@@ -554,9 +575,9 @@
             this.chkTrangThai.AutoSize = true;
             this.chkTrangThai.Location = new System.Drawing.Point(534, 184);
             this.chkTrangThai.Name = "chkTrangThai";
-            this.chkTrangThai.Size = new System.Drawing.Size(75, 17);
+            this.chkTrangThai.Size = new System.Drawing.Size(76, 17);
             this.chkTrangThai.TabIndex = 77;
-            this.chkTrangThai.Text = "Trạng thái";
+            this.chkTrangThai.Text = "Hoạt động";
             this.chkTrangThai.UseVisualStyleBackColor = true;
             // 
             // dtpThoiDiemRaMat
@@ -972,27 +993,6 @@
             this.btnThoat.Size = new System.Drawing.Size(57, 22);
             this.btnThoat.Text = "Thoát";
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
-            // 
-            // txtPin
-            // 
-            this.txtPin.Location = new System.Drawing.Point(534, 129);
-            this.txtPin.Name = "txtPin";
-            this.txtPin.Size = new System.Drawing.Size(165, 21);
-            this.txtPin.TabIndex = 87;
-            // 
-            // txtTanSoQuet
-            // 
-            this.txtTanSoQuet.Location = new System.Drawing.Point(1154, 129);
-            this.txtTanSoQuet.Name = "txtTanSoQuet";
-            this.txtTanSoQuet.Size = new System.Drawing.Size(165, 21);
-            this.txtTanSoQuet.TabIndex = 88;
-            // 
-            // txtHoTroMang
-            // 
-            this.txtHoTroMang.Location = new System.Drawing.Point(1154, 160);
-            this.txtHoTroMang.Name = "txtHoTroMang";
-            this.txtHoTroMang.Size = new System.Drawing.Size(165, 21);
-            this.txtHoTroMang.TabIndex = 89;
             // 
             // frmSanPham
             // 

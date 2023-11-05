@@ -35,5 +35,13 @@ namespace DAL
         {
             return _cnn.delete(Connect.apiUrl + "SanPham/" + data);
         }
+        public List<SanPhamDTO> getDataTheoTrangThai(int TrangThai)
+        {
+            return _cnn.index(Connect.apiUrl + "SanPham/" + TrangThai + "/getDataTheoTrangThai");
+        }
+        public List<SanPhamDTO> findDataTheoTrangThai(int TrangThai, String data)
+        {
+            return _cnn.index(Connect.apiUrl + "SanPham/" + TrangThai + "/" + data + "/findDataTheoTrangThai");
+        }
     }
 }

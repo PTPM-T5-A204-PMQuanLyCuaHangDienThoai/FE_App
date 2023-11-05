@@ -155,7 +155,7 @@ namespace GUI
             if (String.IsNullOrEmpty(txtTen.Text) ||
                 String.IsNullOrEmpty(txtTenDangNhap.Text) ||
                 String.IsNullOrEmpty(txtDiaChi.Text) ||
-                String.IsNullOrEmpty(selectedPath) ||
+                imgAnhDaiDien.Image == null ||
                 dtpNgaySinh.Value == null ||
                 cboChucVu.EditValue.ToString() == null)
             {

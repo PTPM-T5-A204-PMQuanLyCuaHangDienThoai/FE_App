@@ -41,5 +41,13 @@ namespace BLL
         {
             return dal.findItem(data) == null ? false : true;
         }
+        public List<SanPhamDTO> getDataTheoTrangThai(bool TrangThai)
+        {
+            return dal.getDataTheoTrangThai(TrangThai ? 1 : 0);
+        }
+        public List<SanPhamDTO> findDataTheoTrangThai(bool TrangThai, String data)
+        {
+            return dal.findDataTheoTrangThai(TrangThai ? 1 : 0, data);
+        }
     }
 }

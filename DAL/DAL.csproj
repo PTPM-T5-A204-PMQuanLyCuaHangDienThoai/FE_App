@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChiTietPhieuNhapDAL.cs" />
     <Compile Include="ChucVuDAL.cs" />
     <Compile Include="Connect.cs" />
     <Compile Include="CuaHangDAL.cs" />
@@ -50,6 +51,7 @@
     <Compile Include="NhomDAL.cs" />
     <Compile Include="NhomNguoiDungDAL.cs" />
     <Compile Include="PhanQuyenDAL.cs" />
+    <Compile Include="PhieuNhapDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuyenDAL.cs" />
     <Compile Include="SanPhamDAL.cs" />

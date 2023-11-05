@@ -330,14 +330,14 @@ namespace GUI
                 txtGPU.Text = gvDanhSach.GetFocusedRowCellValue("GPU").ToString();
                 txtRam.Text = gvDanhSach.GetFocusedRowCellValue("RAM").ToString();
                 txtRom.Text = gvDanhSach.GetFocusedRowCellValue("ROM").ToString();
-                chkFlash.Checked = gvDanhSach.GetFocusedRowCellValue("Flash").ToString() == "true" ? true : false;
+                chkFlash.Checked = gvDanhSach.GetFocusedRowCellValue("Flash").ToString() == "True" ? true : false;
                 txtPin.Text = gvDanhSach.GetFocusedRowCellValue("Pin").ToString();
                 txtSim.Text = gvDanhSach.GetFocusedRowCellValue("Sim").ToString();
                 txtHeDieuHanh.Text = gvDanhSach.GetFocusedRowCellValue("HeDieuHanh").ToString();
                 txtHoTroMang.Text = gvDanhSach.GetFocusedRowCellValue("HoTroMang").ToString();
-                chkKhangNuoc.Checked = gvDanhSach.GetFocusedRowCellValue("KhangNuoc").ToString() == "true" ? true : false;
+                chkKhangNuoc.Checked = gvDanhSach.GetFocusedRowCellValue("KhangNuoc").ToString() == "True" ? true : false;
                 dtpThoiDiemRaMat.Value = DateTime.Parse(gvDanhSach.GetFocusedRowCellValue("ThoiDiemRaMat").ToString());
-                chkTrangThai.Checked = gvDanhSach.GetFocusedRowCellValue("TrangThai").ToString() == "true" ? true : false;
+                chkTrangThai.Checked = gvDanhSach.GetFocusedRowCellValue("TrangThai").ToString() == "True" ? true : false;
                 txtThoiGianBaoHanh.Text = gvDanhSach.GetFocusedRowCellValue("ThoiGianBaoHanh").ToString();
                 txtThoiGianDoiTra.Text = gvDanhSach.GetFocusedRowCellValue("ThoiGianDoiTra").ToString();
                 cboDanhMuc.EditValue = gvDanhSach.GetFocusedRowCellValue("idDanhMuc").ToString();

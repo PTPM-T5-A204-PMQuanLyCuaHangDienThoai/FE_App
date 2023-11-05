@@ -22,6 +22,7 @@ namespace GUI
         frmNhaCungCap objNhaCungCap;
         frmCuaHang objCuaHang;
         frmSanPham objSanPham;
+        frmNhapHang objNhapHang;
         frmDoiMatKhau objDoiMatKhau;
         frmPhanQuyen objPhanQuyen;
 
@@ -171,6 +172,25 @@ namespace GUI
                         else
                         {
                             objSanPham.Activate();
+                        }
+                        break;
+                    }
+                case "NhapHang":
+                    {
+                        if (!_phanQuyen.ktraQuyen(e.Link.Item.Tag.ToString()))
+                        {
+                            MessageBox.Show("Bạn không có quyền truy cập chức năng này");
+                            return;
+                        }
+                        if (objNhapHang == null || objNhapHang.IsDisposed)
+                        {
+                            objNhapHang = new frmNhapHang();
+                            objNhapHang.MdiParent = this;
+                            objNhapHang.Show();
+                        }
+                        else
+                        {
+                            objNhapHang.Activate();
                         }
                         break;
                     }
