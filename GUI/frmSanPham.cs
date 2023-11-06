@@ -94,19 +94,19 @@ namespace GUI
             btnBoQua.Visible = !t;
         }
 
-        void loadData()
+        public void loadData()
         {
             gcDanhSach.DataSource = _sanPham.getAll();
             gvDanhSach.OptionsBehavior.Editable = false;
         }
 
-        void loadsearchDanhMuc()
+        public void loadsearchDanhMuc()
         {
             cboDanhMuc.Properties.DataSource = _danhMuc.getAll();
             cboDanhMuc.Properties.ValueMember = "id";
             cboDanhMuc.Properties.DisplayMember = "name";
         }
-        void loadsearchNhaCungCap()
+        public void loadsearchNhaCungCap()
         {
             cboNhaCungCap.Properties.DataSource = _nhaCungCap.getAll();
             cboNhaCungCap.Properties.ValueMember = "id";

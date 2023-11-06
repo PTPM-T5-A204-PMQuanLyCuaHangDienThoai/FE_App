@@ -21,6 +21,7 @@ namespace GUI
         String _ma;
         DanhMucBLL bll;
         String selectedPath, pictureAddress = "../../../img/";
+        frmSanPham objSanPham = (frmSanPham)Application.OpenForms["frmSanPham"];
         void _enable(bool t)
         {
             txtid.Enabled = t;
@@ -139,6 +140,10 @@ namespace GUI
             loadData();
             _enable(false);
             showHideControl(true);
+            if (objSanPham != null)
+            {
+                objSanPham.loadsearchDanhMuc();
+            }
         }
 
         private void btnBoQua_Click(object sender, EventArgs e)

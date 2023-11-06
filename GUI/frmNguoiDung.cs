@@ -23,8 +23,8 @@ namespace GUI
         NguoiDungBLL bll;
         ChucVuBLL chucVuBLL;
         String selectedPath, pictureAddress = "../../../img/";
-        //frmDonHang objDonHang = (frmDonHang)Application.OpenForms["frmDonHang"];
-        //public String donHangNguoiDung;
+        public String xuathang = String.Empty;
+        frmXuatHang objxuathang = (frmXuatHang)Application.OpenForms["frmXuatHang"];
         public string OpenFile()
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
@@ -313,6 +313,16 @@ namespace GUI
         {
             frmChucVu frm = new frmChucVu();
             frm.ShowDialog();
+        }
+
+        private void gcDanhSach_DoubleClick(object sender, EventArgs e)
+        {
+            if (gvDanhSach.RowCount > 0 && !String.IsNullOrEmpty(xuathang) && objxuathang != null)
+            {
+                objxuathang.loadcboKhachHang();
+                objxuathang.setcboKhachHang(Int32.Parse(_ma));
+                this.Close();
+            }
         }
 
         private void btnResetMatKhau_Click(object sender, EventArgs e)

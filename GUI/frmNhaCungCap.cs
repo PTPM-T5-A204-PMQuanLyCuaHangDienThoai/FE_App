@@ -19,6 +19,9 @@ namespace GUI
         bool _them;
         String _ma;
         NhaCungCapBLL bll;
+        frmSanPham objSanPham = (frmSanPham)Application.OpenForms["frmSanPham"];
+        public String nhaphang = String.Empty;
+        frmNhapHang objNhapHang = (frmNhapHang)Application.OpenForms["frmNhapHang"];
         void _enable(bool t)
         {
             txtid.Enabled = t;
@@ -184,6 +187,10 @@ namespace GUI
             loadData();
             _enable(false);
             showHideControl(true);
+            if (objSanPham != null)
+            {
+                objSanPham.loadsearchNhaCungCap();
+            }
         }
 
         private void btnBoQua_Click(object sender, EventArgs e)
@@ -208,6 +215,16 @@ namespace GUI
                 txtSDT.Text = gvDanhSach.GetFocusedRowCellValue("SDT").ToString();
                 txtEmail.Text = gvDanhSach.GetFocusedRowCellValue("Email").ToString();
                 chkHoatDong.Checked = gvDanhSach.GetFocusedRowCellValue("HoatDong").ToString() == "True" ? true : false;
+            }
+        }
+
+        private void gcDanhSach_DoubleClick(object sender, EventArgs e)
+        {
+            if (gvDanhSach.RowCount > 0 && !String.IsNullOrEmpty(nhaphang) && objNhapHang != null)
+            {
+                objNhapHang.loadcboNhaCungCap();
+                objNhapHang.setcboNhaCungCap(txtid.Text);
+                this.Close();
             }
         }
     }
