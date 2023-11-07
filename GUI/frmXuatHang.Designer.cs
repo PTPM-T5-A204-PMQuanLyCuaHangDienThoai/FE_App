@@ -43,6 +43,7 @@
             this.TinhTrang = new DevExpress.XtraGrid.Columns.GridColumn();
             this.TrangThai = new DevExpress.XtraGrid.Columns.GridColumn();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.btnThemKhachHang = new DevExpress.XtraEditors.SimpleButton();
             this.chkTinhTrang = new System.Windows.Forms.CheckBox();
             this.chkTrangThai = new System.Windows.Forms.CheckBox();
             this.txtTongTien = new CustomToolbox.NumberBox();
@@ -96,7 +97,6 @@
             this.btnChuaThanhToan = new System.Windows.Forms.ToolStripMenuItem();
             this.btnChuaThanhToan_ChuaXacNhan = new System.Windows.Forms.ToolStripMenuItem();
             this.btnThanhToan_XacNhan = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnThemKhachHang = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.tabDanhSach)).BeginInit();
             this.tabDanhSach.SuspendLayout();
             this.pageDanhSach.SuspendLayout();
@@ -257,6 +257,15 @@
             this.groupControl1.Size = new System.Drawing.Size(930, 112);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Thông tin phiếu nhập";
+            // 
+            // btnThemKhachHang
+            // 
+            this.btnThemKhachHang.ImageOptions.Image = global::GUI.Properties.Resources.add_16x162;
+            this.btnThemKhachHang.Location = new System.Drawing.Point(729, 32);
+            this.btnThemKhachHang.Name = "btnThemKhachHang";
+            this.btnThemKhachHang.Size = new System.Drawing.Size(22, 21);
+            this.btnThemKhachHang.TabIndex = 10;
+            this.btnThemKhachHang.Click += new System.EventHandler(this.btnThemKhachHang_Click);
             // 
             // chkTinhTrang
             // 
@@ -492,7 +501,7 @@
             // 
             // GiaNhap
             // 
-            this.GiaNhap.Caption = "Giá nhập";
+            this.GiaNhap.Caption = "Đơn giá";
             this.GiaNhap.FieldName = "GiaNhap";
             this.GiaNhap.Name = "GiaNhap";
             this.GiaNhap.Visible = true;
@@ -751,15 +760,6 @@
             this.btnThanhToan_XacNhan.Size = new System.Drawing.Size(223, 22);
             this.btnThanhToan_XacNhan.Text = "Thanh toán - Xác nhận";
             this.btnThanhToan_XacNhan.Click += new System.EventHandler(this.menuThanhToan_XacNhan_Click);
-            // 
-            // btnThemKhachHang
-            // 
-            this.btnThemKhachHang.ImageOptions.Image = global::GUI.Properties.Resources.add_16x162;
-            this.btnThemKhachHang.Location = new System.Drawing.Point(729, 32);
-            this.btnThemKhachHang.Name = "btnThemKhachHang";
-            this.btnThemKhachHang.Size = new System.Drawing.Size(22, 21);
-            this.btnThemKhachHang.TabIndex = 10;
-            this.btnThemKhachHang.Click += new System.EventHandler(this.btnThemKhachHang_Click);
             // 
             // frmXuatHang
             // 

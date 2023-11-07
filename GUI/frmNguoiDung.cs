@@ -24,7 +24,6 @@ namespace GUI
         ChucVuBLL chucVuBLL;
         String selectedPath, pictureAddress = "../../../img/";
         public String xuathang = String.Empty;
-        frmXuatHang objxuathang = (frmXuatHang)Application.OpenForms["frmXuatHang"];
         public string OpenFile()
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
@@ -317,11 +316,25 @@ namespace GUI
 
         private void gcDanhSach_DoubleClick(object sender, EventArgs e)
         {
-            if (gvDanhSach.RowCount > 0 && !String.IsNullOrEmpty(xuathang) && objxuathang != null)
+            if (gvDanhSach.RowCount > 0 && xuathang.Equals("xuathang"))
             {
-                objxuathang.loadcboKhachHang();
-                objxuathang.setcboKhachHang(Int32.Parse(_ma));
-                this.Close();
+                frmXuatHang objxuathang = (frmXuatHang)Application.OpenForms["frmXuatHang"];
+                if(objxuathang != null)
+                {
+                    objxuathang.loadcboKhachHang();
+                    objxuathang.setcboKhachHang(Int32.Parse(_ma));
+                    this.Close();
+                }
+            }
+            if (gvDanhSach.RowCount > 0 && xuathang.Equals("baohanh"))
+            {
+                frmBaoHanh objBaoHanh = (frmBaoHanh)Application.OpenForms["frmBaoHanh"];
+                if (objBaoHanh != null)
+                {
+                    objBaoHanh.loadcboKhachHang();
+                    objBaoHanh.setcboKhachHang(Int32.Parse(_ma));
+                    this.Close();
+                }
             }
         }
 

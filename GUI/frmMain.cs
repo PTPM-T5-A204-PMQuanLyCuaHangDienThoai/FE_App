@@ -26,6 +26,7 @@ namespace GUI
         frmDoiMatKhau objDoiMatKhau;
         frmPhanQuyen objPhanQuyen;
         frmXuatHang objXuatHang;
+        frmBaoHanh objBaoHanh;
 
         PhanQuyenBLL _phanQuyen;
         QuyenBLL _quyen;
@@ -211,6 +212,25 @@ namespace GUI
                         else
                         {
                             objXuatHang.Activate();
+                        }
+                        break;
+                    }
+                case "BaoHanh":
+                    {
+                        if (!_phanQuyen.ktraQuyen(e.Link.Item.Tag.ToString()))
+                        {
+                            MessageBox.Show("Bạn không có quyền truy cập chức năng này");
+                            return;
+                        }
+                        if (objBaoHanh == null || objBaoHanh.IsDisposed)
+                        {
+                            objBaoHanh = new frmBaoHanh();
+                            objBaoHanh.MdiParent = this;
+                            objBaoHanh.Show();
+                        }
+                        else
+                        {
+                            objBaoHanh.Activate();
                         }
                         break;
                     }

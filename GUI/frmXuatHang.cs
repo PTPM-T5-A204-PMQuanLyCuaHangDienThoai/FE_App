@@ -510,7 +510,7 @@ namespace GUI
         private void btnThemKhachHang_Click(object sender, EventArgs e)
         {
             frmNguoiDung frm = new frmNguoiDung();
-            frm.xuathang = "nhaphang";
+            frm.xuathang = "xuathang";
             frm.ShowDialog();
         }
     }
