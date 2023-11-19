@@ -154,6 +154,12 @@
     <Compile Include="frmPhanQuyen.Designer.cs">
       <DependentUpon>frmPhanQuyen.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmThongke.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThongke.Designer.cs">
+      <DependentUpon>frmThongke.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmXuatHang.cs">
       <SubType>Form</SubType>
     </Compile>
