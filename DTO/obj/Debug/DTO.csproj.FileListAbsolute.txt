@@ -74,3 +74,41 @@ C:\D\Hoc\Hoc Ky 7\Phat trien ung dung thong minh\BTL\FE_App\DTO\obj\Debug\DTO.cs
 C:\D\Hoc\Hoc Ky 7\Phat trien ung dung thong minh\BTL\FE_App\DTO\obj\Debug\DTO.csproj.CopyComplete
 C:\D\Hoc\Hoc Ky 7\Phat trien ung dung thong minh\BTL\FE_App\DTO\obj\Debug\DTO.dll
 C:\D\Hoc\Hoc Ky 7\Phat trien ung dung thong minh\BTL\FE_App\DTO\obj\Debug\DTO.pdb
+C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\DTO\bin\Debug\DTO.dll
+C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\DTO\bin\Debug\DTO.pdb
+C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\DTO\bin\Debug\FSharp.Core.dll
+C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\DTO\bin\Debug\FSharp.Data.Csv.Core.dll
+C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\DTO\bin\Debug\FSharp.Data.dll
+C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\DTO\bin\Debug\FSharp.Data.Html.Core.dll
+C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\DTO\bin\Debug\FSharp.Data.Http.dll
+C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\DTO\bin\Debug\FSharp.Data.Json.Core.dll
+C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\DTO\bin\Debug\FSharp.Data.Runtime.Utilities.dll
+C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\DTO\bin\Debug\FSharp.Data.WorldBank.Core.dll
+C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\DTO\bin\Debug\FSharp.Data.Xml.Core.dll
+C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\DTO\bin\Debug\FSharp.Core.xml
+C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\DTO\bin\Debug\FSharp.Data.xml
+C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\DTO\bin\Debug\FSharp.Data.Csv.Core.xml
+C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\DTO\bin\Debug\FSharp.Data.Html.Core.xml
+C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\DTO\bin\Debug\FSharp.Data.Http.xml
+C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\DTO\bin\Debug\FSharp.Data.Json.Core.xml
+C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\DTO\bin\Debug\FSharp.Data.Runtime.Utilities.xml
+C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\DTO\bin\Debug\FSharp.Data.WorldBank.Core.xml
+C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\DTO\bin\Debug\FSharp.Data.Xml.Core.xml
+C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\DTO\bin\Debug\cs\FSharp.Core.resources.dll
+C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\DTO\bin\Debug\de\FSharp.Core.resources.dll
+C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\DTO\bin\Debug\es\FSharp.Core.resources.dll
+C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\DTO\bin\Debug\fr\FSharp.Core.resources.dll
+C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\DTO\bin\Debug\it\FSharp.Core.resources.dll
+C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\DTO\bin\Debug\ja\FSharp.Core.resources.dll
+C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\DTO\bin\Debug\ko\FSharp.Core.resources.dll
+C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\DTO\bin\Debug\pl\FSharp.Core.resources.dll
+C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\DTO\bin\Debug\pt-BR\FSharp.Core.resources.dll
+C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\DTO\bin\Debug\ru\FSharp.Core.resources.dll
+C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\DTO\bin\Debug\tr\FSharp.Core.resources.dll
+C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\DTO\bin\Debug\zh-Hans\FSharp.Core.resources.dll
+C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\DTO\bin\Debug\zh-Hant\FSharp.Core.resources.dll
+C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\DTO\obj\Debug\DTO.csproj.CopyComplete
+C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\DTO\obj\Debug\DTO.dll
+C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\DTO\obj\Debug\DTO.pdb

@@ -36,3 +36,22 @@ C:\D\Hoc\Hoc Ky 7\Phat trien ung dung thong minh\BTL\FE_App\BLL\obj\Debug\BLL.cs
 C:\D\Hoc\Hoc Ky 7\Phat trien ung dung thong minh\BTL\FE_App\BLL\obj\Debug\BLL.csproj.CopyComplete
 C:\D\Hoc\Hoc Ky 7\Phat trien ung dung thong minh\BTL\FE_App\BLL\obj\Debug\BLL.dll
 C:\D\Hoc\Hoc Ky 7\Phat trien ung dung thong minh\BTL\FE_App\BLL\obj\Debug\BLL.pdb
+C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\BLL\bin\Debug\BLL.dll.config
+C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\BLL\bin\Debug\BLL.dll
+C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\BLL\bin\Debug\BLL.pdb
+C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\BLL\bin\Debug\DAL.dll
+C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\BLL\bin\Debug\DTO.dll
+C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\BLL\bin\Debug\CustomLibrary.dll
+C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\BLL\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\BLL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\BLL\bin\Debug\DAL.pdb
+C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\BLL\bin\Debug\DAL.dll.config
+C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\BLL\bin\Debug\DTO.pdb
+C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\BLL\bin\Debug\CustomLibrary.pdb
+C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\BLL\bin\Debug\CustomLibrary.dll.config
+C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\BLL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\BLL\obj\Debug\BLL.dll
+C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\BLL\obj\Debug\BLL.pdb

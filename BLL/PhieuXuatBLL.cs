@@ -45,6 +45,7 @@ namespace BLL
         {
             return dal.getDataTheoTrangThai(TrangThai ? 1 : 0);
         }
+        
         public List<PhieuXuatDTO> getDataTheoTinhTrang(int TinhTrang)
         {
             return dal.getDataTheoTinhTrang(TinhTrang);
@@ -52,6 +53,15 @@ namespace BLL
         public List<PhieuXuatDTO> getDataTheoTinhTrang_TrangThai(int TinhTrang, bool TrangThai)
         {
             return dal.getDataTheoTinhTrang_TrangThai(TinhTrang, TrangThai ? 1 : 0);
+        }
+        public List<PhieuXuatDTO> getDataTheoNgay(DateTime TinhTrang, DateTime TrangThai)
+        {
+            return dal.getDataTheoNgay(TinhTrang, TrangThai);
+        }
+        
+        public List<PhieuXuatDTO> GetPhieuXuatsNhanVien(int ma)
+        {
+            return dal.GetPhieuXuatsNhanVien(ma);
         }
     }
 }

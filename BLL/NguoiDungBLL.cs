@@ -19,6 +19,10 @@ namespace BLL
         {
             return dal.getData();
         }
+        public List<NguoiDungDTO> getNhanVien()
+        {
+            return dal.getNhanVien();
+        }
 
         public NguoiDungDTO findItem(String data)
         {

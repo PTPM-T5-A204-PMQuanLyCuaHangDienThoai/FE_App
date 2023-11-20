@@ -19,6 +19,10 @@ namespace DAL
         {
             return _cnn.index(Connect.apiUrl + "NguoiDung");
         }
+        public List<NguoiDungDTO> getNhanVien()
+        {
+            return _cnn.index(Connect.apiUrl + "NguoiDung"+"/nhanvien"+"/getdanhsach");
+        }
         public NguoiDungDTO findItem(String data)
         {
             return _cnn.show(Connect.apiUrl + "NguoiDung/" + data);

@@ -47,5 +47,21 @@ namespace DAL
         {
             return _cnn.index(Connect.apiUrl + "PhieuXuat/" + TinhTrang + "/" + TrangThai + "/getDataTheoTinhTrang_TrangThai");
         }
+        public List<PhieuXuatDTO> GetPhieuXuatsNhanVien(int TinhTrang)
+        {
+            return _cnn.index(Connect.apiUrl + "PhieuXuat/" + TinhTrang +"/thongketheonhanvien");
+        }
+        public List<PhieuXuatDTO> getDataTheoNgay(DateTime TinhTrang, DateTime TrangThai)
+        {
+            int ngaybd = TinhTrang.Day;
+            int thangbd = TinhTrang.Month;
+            int nambd = TinhTrang.Year;
+            int ngaykt = TrangThai.Day;
+            int thangkt = TrangThai.Month;
+            int namkt = TrangThai.Year;
+            string batdau= $"{nambd}-{thangbd}-{ngaybd}";
+            string kt = $"{namkt}-{thangkt}-{ngaykt}";
+            return _cnn.index(Connect.apiUrl + "PhieuXuat/" + batdau + "/" + kt + "/thongketheongay");
+        }
     }
 }
