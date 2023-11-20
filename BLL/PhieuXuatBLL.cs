@@ -45,13 +45,13 @@ namespace BLL
         {
             return dal.getDataTheoTrangThai(TrangThai ? 1 : 0);
         }
-        public List<PhieuXuatDTO> getDataTheoTinhTrang(bool TinhTrang)
+        public List<PhieuXuatDTO> getDataTheoTinhTrang(int TinhTrang)
         {
-            return dal.getDataTheoTinhTrang(TinhTrang ? 1 : 0);
+            return dal.getDataTheoTinhTrang(TinhTrang);
         }
-        public List<PhieuXuatDTO> getDataTheoTinhTrang_TrangThai(bool TinhTrang, bool TrangThai)
+        public List<PhieuXuatDTO> getDataTheoTinhTrang_TrangThai(int TinhTrang, bool TrangThai)
         {
-            return dal.getDataTheoTinhTrang_TrangThai(TinhTrang ? 1 : 0, TrangThai ? 1 : 0);
+            return dal.getDataTheoTinhTrang_TrangThai(TinhTrang, TrangThai ? 1 : 0);
         }
     }
 }

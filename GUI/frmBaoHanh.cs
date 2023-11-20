@@ -59,7 +59,7 @@ namespace GUI
         }
         void loadgcDanhSach()
         {
-            gcDanhSach.DataSource = _phieuXuat.getDataTheoTinhTrang_TrangThai(true, true);
+            gcDanhSach.DataSource = _phieuXuat.getDataTheoTinhTrang_TrangThai(2, true);
             gvDanhSach.OptionsBehavior.Editable = false;
         }
         void loadgcChiTiet()

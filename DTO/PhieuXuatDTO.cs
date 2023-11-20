@@ -12,7 +12,7 @@ namespace DTO
         public DateTime NgayXuat { get; set; }
         public int TongSoLuong { get; set; }
         public int TongTien { get; set; }
-        public bool TinhTrang { get; set; }
+        public int TinhTrang { get; set; }
         public bool TrangThai { get; set; }
         public String idKhachHang { get; set; }
         public int idNhanVien { get; set; }

@@ -66,22 +66,22 @@ namespace GUI
         }
         void loadgcDanhSachChuaXacNhan()
         {
-            gcDanhSach.DataSource = _phieuXuat.getDataTheoTinhTrang(false);
+            gcDanhSach.DataSource = _phieuXuat.getDataTheoTinhTrang(1);
             gvDanhSach.OptionsBehavior.Editable = false;
         }
         void loadgcDanhSachXacNhan()
         {
-            gcDanhSach.DataSource = _phieuXuat.getDataTheoTinhTrang(true);
+            gcDanhSach.DataSource = _phieuXuat.getDataTheoTinhTrang(2);
             gvDanhSach.OptionsBehavior.Editable = false;
         }
         void loadgcDanhSachChuaThanhToan_XacNhan()
         {
-            gcDanhSach.DataSource = _phieuXuat.getDataTheoTinhTrang_TrangThai(false, false);
+            gcDanhSach.DataSource = _phieuXuat.getDataTheoTinhTrang_TrangThai(1, false);
             gvDanhSach.OptionsBehavior.Editable = false;
         }
         void loadgcDanhSachThanhToan_XacNhan()
         {
-            gcDanhSach.DataSource = _phieuXuat.getDataTheoTinhTrang_TrangThai(true, true);
+            gcDanhSach.DataSource = _phieuXuat.getDataTheoTinhTrang_TrangThai(2, true);
             gvDanhSach.OptionsBehavior.Editable = false;
         }
         public void loadcboKhachHang()
@@ -316,7 +316,7 @@ namespace GUI
                 data.NgayXuat = DateTime.Parse(dtpNgayXuat.Value.ToString("yyyy-MM-dd HH:mm:ss"));
                 data.TongSoLuong = 0;
                 data.TongTien = 0;
-                data.TinhTrang = false;
+                data.TinhTrang = 1;
                 data.TrangThai = false;
                 data.idKhachHang = cboKhachHang.EditValue.ToString();
                 data.idNhanVien = Login.user.id;
@@ -332,6 +332,7 @@ namespace GUI
                     if (data == null)
                     {
                         _chiTietPhieuXuat.insert(item);
+                        tongTien += item.GiaNhap * item.SoLuong;
                     }
                     else
                     {
@@ -376,7 +377,7 @@ namespace GUI
                 txtTongSoLuong.Text = gvDanhSach.GetFocusedRowCellValue("TongSoLuong").ToString();
                 txtTongTien.Text = double.Parse(gvDanhSach.GetFocusedRowCellValue("TongTien").ToString()).ToString("N0");
                 chkTrangThai.Checked = gvDanhSach.GetFocusedRowCellValue("TrangThai").ToString() == "True" ? true : false;
-                chkTinhTrang.Checked = gvDanhSach.GetFocusedRowCellValue("TinhTrang").ToString() == "True" ? true : false;
+                chkTinhTrang.Checked = gvDanhSach.GetFocusedRowCellValue("TinhTrang").ToString() == "2" ? true : false;
             }
         }
 
@@ -427,10 +428,16 @@ namespace GUI
                 MessageBox.Show("ID không tồn tại.");
                 return;
             }
+            if (chkTinhTrang.Checked)
+            {
+                MessageBox.Show("Phiếu xuất đã được xác nhận.");
+                return;
+            }
             if (MessageBox.Show("Bạn có chắc chắn muốn xác nhận xuất hàng cho phiếu xuất " + _ma + " không?", "Xác nhận", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 PhieuXuatDTO data = _phieuXuat.findItem(_ma);
-                data.TinhTrang = true;
+                data.TinhTrang = 2;
+                data.idNhanVien = Login.user.id;
                 _phieuXuat.update(data);
                 loadgcDanhSachChuaThanhToan();
             }
