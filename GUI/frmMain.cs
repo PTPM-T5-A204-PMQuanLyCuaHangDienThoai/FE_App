@@ -275,7 +275,7 @@ namespace GUI
                         }
                         break;
                     }
-                case "thongke":
+                case "ThongKe":
                     {
                         if (!_phanQuyen.ktraQuyen(e.Link.Item.Tag.ToString()))
                         {
