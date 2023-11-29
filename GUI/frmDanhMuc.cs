@@ -21,11 +21,11 @@ namespace GUI
         String _ma;
         DanhMucBLL bll;
         String selectedPath, pictureAddress = "../../../img/";
-        frmSanPham objSanPham = (frmSanPham)Application.OpenForms["frmSanPham"];
         void _enable(bool t)
         {
             txtid.Enabled = t;
             txtTen.Enabled = t;
+            btnChonAnh.Enabled = t;
         }
         void _reset()
         {
@@ -123,6 +123,7 @@ namespace GUI
                 DanhMucDTO _data = new DanhMucDTO();
                 _data.id = txtid.Text;
                 _data.name= txtTen.Text;
+                _data.Anh = selectedPath;
                 bll.insert(_data);
             }
             else
@@ -134,12 +135,14 @@ namespace GUI
                     return;
                 }
                 _data.name = txtTen.Text;
+                _data.Anh = selectedPath;
                 bll.update(_data);
             }
             _them = false;
             loadData();
             _enable(false);
             showHideControl(true);
+            frmSanPham objSanPham = (frmSanPham)Application.OpenForms["frmSanPham"];
             if (objSanPham != null)
             {
                 objSanPham.loadsearchDanhMuc();

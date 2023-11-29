@@ -124,12 +124,16 @@ namespace GUI
             lv.LargeImageList = img;
             lv.Dock = DockStyle.Fill;
             lv.ForeColor = Color.White;
-
-            foreach (SanPhamDTO item in _sanPham.findDataTheoTrangThai(true ,txtTim.Text))
+            List<SanPhamDTO> lstData = _sanPham.findDataTheoTrangThai(true, txtTim.Text);
+            if (lstData == null)
+            {
+                return;
+            }
+            foreach (SanPhamDTO item in lstData)
             {
                 if (File.Exists(pictureAddress + item.Anh))
                 {
-                    img.Images.Add(item.Anh.GetHashCode().ToString(), Image.FromFile(item.Anh));
+                    img.Images.Add(item.Anh.GetHashCode().ToString(), Image.FromFile(pictureAddress + item.Anh));
                 }
                 else
                 {
@@ -138,15 +142,16 @@ namespace GUI
                 ListViewItem listViewItem = new ListViewItem();
                 listViewItem.ImageKey = item.Anh.GetHashCode().ToString();
                 listViewItem.Font = new Font(listViewItem.Font.FontFamily, 16);
+                listViewItem.ForeColor = Color.Black;
                 listViewItem.Font = new Font(listViewItem.Font.FontFamily, listViewItem.Font.Size, FontStyle.Bold);
                 listViewItem.Tag = item;
                 if (item.GiaKhuyenMai == item.GiaGoc)
                 {
-                    listViewItem.Text = item.name + "\n" + item.GiaKhuyenMai + " đ\n\n\n";
+                    listViewItem.Text = item.name + "\n";
                 }
                 else
                 {
-                    listViewItem.Text = item.name + "\n" + item.GiaGoc + " đ - " + item.GiaKhuyenMai + " đ\n\n\n";
+                    listViewItem.Text = item.name + "\n";
                 }
                 listViewItem.SubItems.Add(item.GiaGoc.ToString());
                 listViewItem.SubItems.Add(item.GiaKhuyenMai.ToString());

@@ -27,7 +27,6 @@ namespace GUI
         {
             txtid.Enabled = t;
             txtTen.Enabled = t;
-            txtSoLuongTon.Enabled = t;
             txtGiaGoc.Enabled = t;
             txtGiaKhuyenMai.Enabled = t;
             txtMoTa.Enabled = t;
@@ -59,7 +58,7 @@ namespace GUI
         {
             txtid.Text = String.Empty;
             txtTen.Text = String.Empty;
-            txtSoLuongTon.Text = String.Empty;
+            txtSoLuongTon.Text = "0";
             txtGiaGoc.Text = String.Empty;
             txtGiaKhuyenMai.Text = String.Empty;
             txtMoTa.Text = String.Empty;
@@ -147,6 +146,7 @@ namespace GUI
             loadData();
             showHideControl(true);
             _enable(false);
+            txtSoLuongTon.Enabled = false;
         }
 
         private void btnThem_Click(object sender, EventArgs e)
