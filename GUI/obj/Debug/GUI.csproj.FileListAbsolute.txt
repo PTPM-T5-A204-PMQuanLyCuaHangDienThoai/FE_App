@@ -197,3 +197,5 @@ C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\GUI\obj\Debug\GUI.ex
 C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\GUI\obj\Debug\GUI.pdb
 C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\GUI\obj\Debug\GUI.frmThongke.resources
 C:\D\Hoc\Hoc Ky 7\Phat trien ung dung thong minh\BTL\FE_App\GUI\obj\Debug\GUI.frmThongke.resources
+C:\D\Hoc\Hoc Ky 7\Phat trien ung dung thong minh\BTL\FE_App\GUI\bin\Debug\Syncfusion.XlsIO.Base.dll
+C:\D\Hoc\Hoc Ky 7\Phat trien ung dung thong minh\BTL\FE_App\GUI\bin\Debug\Syncfusion.Compression.Base.dll

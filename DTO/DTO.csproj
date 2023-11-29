@@ -72,6 +72,7 @@
     <Compile Include="ChiTietPhieuNhapDTO.cs" />
     <Compile Include="ChiTietPhieuXuatDTO.cs" />
     <Compile Include="ChucVuDTO.cs" />
+    <Compile Include="CTPXExcel.cs" />
     <Compile Include="CuaHangDTO.cs" />
     <Compile Include="DanhMucDTO.cs" />
     <Compile Include="NguoiDungDTO.cs" />

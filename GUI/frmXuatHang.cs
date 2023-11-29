@@ -1,4 +1,5 @@
 ﻿using BLL;
+using DemoBuoi7;
 using DevExpress.XtraEditors;
 using DTO;
 using System;
@@ -27,6 +28,7 @@ namespace GUI
         List<ChiTietPhieuXuatDTO> listCT;
         String pictureAddress = "../../../img/";
         frmSanPham objSanPham = (frmSanPham)Application.OpenForms["frmSanPham"];
+        ExcelExport ex;
         void _enable(bool t)
         {
             dtpNgayXuat.Enabled = t;
@@ -214,6 +216,7 @@ namespace GUI
             txtTongSoLuong.Enabled = false;
             txtTongTien.Enabled = false;
             chkTrangThai.Enabled = chkTinhTrang.Enabled = false;
+            ex = new ExcelExport();
         }
 
         private void Lv_Click(object sender, EventArgs e)
@@ -524,6 +527,48 @@ namespace GUI
             frmNguoiDung frm = new frmNguoiDung();
             frm.xuathang = "xuathang";
             frm.ShowDialog();
+        }
+
+        private void btnHoaDon_Click(object sender, EventArgs e)
+        {
+            if(_ma == null)
+            {
+                MessageBox.Show("Vui lòng chọn hóa đơn.");
+                return;
+            }
+            if(!chkTinhTrang.Checked)
+            {
+                MessageBox.Show("Không thể xuất hóa đơn khi chưa xác nhận.");
+                return;
+            }
+            List<ChiTietPhieuXuatDTO> a = _chiTietPhieuXuat.findDataByidPhieuXuat(_ma);
+            if(a == null)
+            {
+                MessageBox.Show("Vui lòng chọn hóa đơn.");
+                return;
+            }
+            List<CTPXExcel> dataSource = new List<CTPXExcel>();
+            foreach(ChiTietPhieuXuatDTO item in a)
+            {
+                CTPXExcel b = new CTPXExcel();
+                b.id = item.id;
+                b.idSanPham = item.idSanPham;
+                b.tenSanPham = _sanPham.findItem(item.idSanPham).name;
+                b.GiaNhap = double.Parse(item.GiaNhap.ToString()).ToString("N0");
+                b.SoLuong = item.SoLuong;
+                b.idPhieuXuat = item.idPhieuXuat;
+                dataSource.Add(b);
+            }
+            ex.ExportData(
+                dataSource, 
+                "abc", 
+                true,
+                txtTongTien.Text,
+                Login.user.name,
+                _khachHang.findItem(cboKhachHang.EditValue.ToString()).name,
+                dtpNgayXuat.Value.ToString(),
+                chkTrangThai.Checked ? "Đã thanh toán" : "Chưa thanh toán"
+                );
         }
     }
 }
