@@ -28,6 +28,7 @@ namespace GUI
         frmXuatHang objXuatHang;
         frmBaoHanh objBaoHanh;
         frmThongke objThongke;
+        frmGoiY objGoiY;
 
         PhanQuyenBLL _phanQuyen;
         QuyenBLL _quyen;
@@ -291,6 +292,25 @@ namespace GUI
                         else
                         {
                             objThongke.Activate();
+                        }
+                        break;
+                    }
+                case "GoiYSanPham":
+                    {
+                        if (!_phanQuyen.ktraQuyen(e.Link.Item.Tag.ToString()))
+                        {
+                            MessageBox.Show("Bạn không có quyền truy cập chức năng này");
+                            return;
+                        }
+                        if (objGoiY == null || objGoiY.IsDisposed)
+                        {
+                            objGoiY = new frmGoiY();
+                            objGoiY.MdiParent = this;
+                            objGoiY.Show();
+                        }
+                        else
+                        {
+                            objGoiY.Activate();
                         }
                         break;
                     }

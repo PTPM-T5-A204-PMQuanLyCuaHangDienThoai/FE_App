@@ -216,7 +216,8 @@ namespace GUI
                 SanPhamDTO _data = new SanPhamDTO();
                 _data.id = txtid.Text;
                 _data.name = txtTen.Text;
-                _data.SoLuongTon = Int32.Parse(txtSoLuongTon.Text);
+                //_data.SoLuongTon = Int32.Parse(txtSoLuongTon.Text);
+                _data.SoLuongTon = 0;
                 _data.GiaGoc = Int32.Parse(txtGiaGoc.Text);
                 _data.GiaKhuyenMai = Int32.Parse(txtGiaKhuyenMai.Text);
                 _data.MoTa = txtMoTa.Text;

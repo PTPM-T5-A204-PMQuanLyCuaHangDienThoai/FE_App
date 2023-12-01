@@ -199,3 +199,15 @@ C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\GUI\obj\Debug\GUI.fr
 C:\D\Hoc\Hoc Ky 7\Phat trien ung dung thong minh\BTL\FE_App\GUI\obj\Debug\GUI.frmThongke.resources
 C:\D\Hoc\Hoc Ky 7\Phat trien ung dung thong minh\BTL\FE_App\GUI\bin\Debug\Syncfusion.XlsIO.Base.dll
 C:\D\Hoc\Hoc Ky 7\Phat trien ung dung thong minh\BTL\FE_App\GUI\bin\Debug\Syncfusion.Compression.Base.dll
+C:\D\Hoc\Hoc Ky 7\Phat trien ung dung thong minh\BTL\FE_App\GUI\obj\Debug\GUI.frmGoiY.resources
+C:\D\Hoc\Hoc Ky 7\Phat trien ung dung thong minh\BTL\FE_App\GUI\bin\Debug\Accord.dll.config
+C:\D\Hoc\Hoc Ky 7\Phat trien ung dung thong minh\BTL\FE_App\GUI\bin\Debug\Accord.MachineLearning.dll
+C:\D\Hoc\Hoc Ky 7\Phat trien ung dung thong minh\BTL\FE_App\GUI\bin\Debug\Accord.Statistics.dll
+C:\D\Hoc\Hoc Ky 7\Phat trien ung dung thong minh\BTL\FE_App\GUI\bin\Debug\Accord.Math.dll
+C:\D\Hoc\Hoc Ky 7\Phat trien ung dung thong minh\BTL\FE_App\GUI\bin\Debug\Accord.dll
+C:\D\Hoc\Hoc Ky 7\Phat trien ung dung thong minh\BTL\FE_App\GUI\bin\Debug\Accord.Math.Core.dll
+C:\D\Hoc\Hoc Ky 7\Phat trien ung dung thong minh\BTL\FE_App\GUI\bin\Debug\Accord.MachineLearning.xml
+C:\D\Hoc\Hoc Ky 7\Phat trien ung dung thong minh\BTL\FE_App\GUI\bin\Debug\Accord.Statistics.xml
+C:\D\Hoc\Hoc Ky 7\Phat trien ung dung thong minh\BTL\FE_App\GUI\bin\Debug\Accord.Math.xml
+C:\D\Hoc\Hoc Ky 7\Phat trien ung dung thong minh\BTL\FE_App\GUI\bin\Debug\Accord.xml
+C:\D\Hoc\Hoc Ky 7\Phat trien ung dung thong minh\BTL\FE_App\GUI\bin\Debug\Accord.Math.Core.xml

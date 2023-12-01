@@ -55,3 +55,14 @@ C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\BLL\obj\Debug\BLL.cs
 C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\BLL\obj\Debug\BLL.csproj.CopyComplete
 C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\BLL\obj\Debug\BLL.dll
 C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\BLL\obj\Debug\BLL.pdb
+C:\D\Hoc\Hoc Ky 7\Phat trien ung dung thong minh\BTL\FE_App\BLL\bin\Debug\Accord.dll.config
+C:\D\Hoc\Hoc Ky 7\Phat trien ung dung thong minh\BTL\FE_App\BLL\bin\Debug\Accord.dll
+C:\D\Hoc\Hoc Ky 7\Phat trien ung dung thong minh\BTL\FE_App\BLL\bin\Debug\Accord.MachineLearning.dll
+C:\D\Hoc\Hoc Ky 7\Phat trien ung dung thong minh\BTL\FE_App\BLL\bin\Debug\Accord.Math.Core.dll
+C:\D\Hoc\Hoc Ky 7\Phat trien ung dung thong minh\BTL\FE_App\BLL\bin\Debug\Accord.Math.dll
+C:\D\Hoc\Hoc Ky 7\Phat trien ung dung thong minh\BTL\FE_App\BLL\bin\Debug\Accord.Statistics.dll
+C:\D\Hoc\Hoc Ky 7\Phat trien ung dung thong minh\BTL\FE_App\BLL\bin\Debug\Accord.xml
+C:\D\Hoc\Hoc Ky 7\Phat trien ung dung thong minh\BTL\FE_App\BLL\bin\Debug\Accord.MachineLearning.xml
+C:\D\Hoc\Hoc Ky 7\Phat trien ung dung thong minh\BTL\FE_App\BLL\bin\Debug\Accord.Math.xml
+C:\D\Hoc\Hoc Ky 7\Phat trien ung dung thong minh\BTL\FE_App\BLL\bin\Debug\Accord.Math.Core.xml
+C:\D\Hoc\Hoc Ky 7\Phat trien ung dung thong minh\BTL\FE_App\BLL\bin\Debug\Accord.Statistics.xml
