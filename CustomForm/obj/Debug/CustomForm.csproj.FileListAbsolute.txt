@@ -10,3 +10,9 @@ C:\D\Hoc\Hoc Ky 7\Phat trien ung dung thong minh\BTL\FE_App\CustomForm\obj\Debug
 C:\D\Hoc\Hoc Ky 7\Phat trien ung dung thong minh\BTL\FE_App\CustomForm\obj\Debug\CustomForm.csproj.CoreCompileInputs.cache
 C:\D\Hoc\Hoc Ky 7\Phat trien ung dung thong minh\BTL\FE_App\CustomForm\obj\Debug\CustomForm.dll
 C:\D\Hoc\Hoc Ky 7\Phat trien ung dung thong minh\BTL\FE_App\CustomForm\obj\Debug\CustomForm.pdb
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\CustomForm\bin\Debug\CustomForm.dll
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\CustomForm\bin\Debug\CustomForm.pdb
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\CustomForm\obj\Debug\CustomForm.csproj.AssemblyReference.cache
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\CustomForm\obj\Debug\CustomForm.csproj.CoreCompileInputs.cache
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\CustomForm\obj\Debug\CustomForm.dll
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\CustomForm\obj\Debug\CustomForm.pdb

@@ -16,3 +16,9 @@ C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\CustomToolbox\obj\De
 C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\CustomToolbox\obj\Debug\CustomToolbox.csproj.CoreCompileInputs.cache
 C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\CustomToolbox\obj\Debug\CustomToolbox.dll
 C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\CustomToolbox\obj\Debug\CustomToolbox.pdb
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\CustomToolbox\bin\Debug\CustomToolbox.dll
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\CustomToolbox\bin\Debug\CustomToolbox.pdb
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\CustomToolbox\obj\Debug\CustomToolbox.csproj.AssemblyReference.cache
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\CustomToolbox\obj\Debug\CustomToolbox.csproj.CoreCompileInputs.cache
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\CustomToolbox\obj\Debug\CustomToolbox.dll
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\CustomToolbox\obj\Debug\CustomToolbox.pdb

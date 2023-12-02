@@ -112,3 +112,41 @@ C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\DTO\obj\Debug\DTO.cs
 C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\DTO\obj\Debug\DTO.csproj.CopyComplete
 C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\DTO\obj\Debug\DTO.dll
 C:\Users\OverPowered\Desktop\Doanmonungdungthongminh\FE_App\DTO\obj\Debug\DTO.pdb
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\DTO\bin\Debug\DTO.dll
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\DTO\bin\Debug\DTO.pdb
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\DTO\bin\Debug\FSharp.Core.dll
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\DTO\bin\Debug\FSharp.Data.Csv.Core.dll
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\DTO\bin\Debug\FSharp.Data.dll
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\DTO\bin\Debug\FSharp.Data.Html.Core.dll
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\DTO\bin\Debug\FSharp.Data.Http.dll
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\DTO\bin\Debug\FSharp.Data.Json.Core.dll
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\DTO\bin\Debug\FSharp.Data.Runtime.Utilities.dll
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\DTO\bin\Debug\FSharp.Data.WorldBank.Core.dll
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\DTO\bin\Debug\FSharp.Data.Xml.Core.dll
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\DTO\bin\Debug\FSharp.Core.xml
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\DTO\bin\Debug\FSharp.Data.xml
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\DTO\bin\Debug\FSharp.Data.Csv.Core.xml
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\DTO\bin\Debug\FSharp.Data.Html.Core.xml
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\DTO\bin\Debug\FSharp.Data.Http.xml
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\DTO\bin\Debug\FSharp.Data.Json.Core.xml
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\DTO\bin\Debug\FSharp.Data.Runtime.Utilities.xml
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\DTO\bin\Debug\FSharp.Data.WorldBank.Core.xml
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\DTO\bin\Debug\FSharp.Data.Xml.Core.xml
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\DTO\bin\Debug\cs\FSharp.Core.resources.dll
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\DTO\bin\Debug\de\FSharp.Core.resources.dll
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\DTO\bin\Debug\es\FSharp.Core.resources.dll
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\DTO\bin\Debug\fr\FSharp.Core.resources.dll
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\DTO\bin\Debug\it\FSharp.Core.resources.dll
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\DTO\bin\Debug\ja\FSharp.Core.resources.dll
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\DTO\bin\Debug\ko\FSharp.Core.resources.dll
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\DTO\bin\Debug\pl\FSharp.Core.resources.dll
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\DTO\bin\Debug\pt-BR\FSharp.Core.resources.dll
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\DTO\bin\Debug\ru\FSharp.Core.resources.dll
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\DTO\bin\Debug\tr\FSharp.Core.resources.dll
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\DTO\bin\Debug\zh-Hans\FSharp.Core.resources.dll
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\DTO\bin\Debug\zh-Hant\FSharp.Core.resources.dll
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\DTO\obj\Debug\DTO.csproj.CopyComplete
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\DTO\obj\Debug\DTO.dll
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\DTO\obj\Debug\DTO.pdb
