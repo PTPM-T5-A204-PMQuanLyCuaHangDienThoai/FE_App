@@ -180,7 +180,6 @@ D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\CustomLi
 D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\CustomLibrary\bin\Debug\SixLabors.ImageSharp.dll
 D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\CustomLibrary\bin\Debug\System.Buffers.dll
 D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\CustomLibrary\bin\Debug\System.Memory.dll
-D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\CustomLibrary\bin\Debug\System.Net.Http.Formatting.dll
 D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\CustomLibrary\bin\Debug\System.Numerics.Vectors.dll
 D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\CustomLibrary\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
 D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\CustomLibrary\bin\Debug\System.Security.AccessControl.dll
@@ -213,8 +212,6 @@ D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\CustomLi
 D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\CustomLibrary\bin\Debug\System.Security.Cryptography.Xml.xml
 D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\CustomLibrary\bin\Debug\System.Security.Principal.Windows.xml
 D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\CustomLibrary\bin\Debug\System.Text.Encoding.CodePages.xml
-D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\CustomLibrary\obj\Debug\CustomLibrary.csproj.AssemblyReference.cache
-D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\CustomLibrary\obj\Debug\CustomLibrary.csproj.CoreCompileInputs.cache
-D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\CustomLibrary\obj\Debug\CustomLibrary.csproj.CopyComplete
 D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\CustomLibrary\obj\Debug\CustomLibrary.dll
 D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\CustomLibrary\obj\Debug\CustomLibrary.pdb
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\CustomLibrary\obj\Debug\CustomLibrary.csprojResolveAssemblyReference.cache

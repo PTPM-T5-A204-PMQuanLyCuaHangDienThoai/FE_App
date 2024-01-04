@@ -145,8 +145,6 @@ D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\DTO\bin\
 D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\DTO\bin\Debug\tr\FSharp.Core.resources.dll
 D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\DTO\bin\Debug\zh-Hans\FSharp.Core.resources.dll
 D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\DTO\bin\Debug\zh-Hant\FSharp.Core.resources.dll
-D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
-D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
-D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\DTO\obj\Debug\DTO.csproj.CopyComplete
 D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\DTO\obj\Debug\DTO.dll
 D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\DTO\obj\Debug\DTO.pdb
+D:\Học\Học kỳ 7\Phát triển ứng dụng thông minh\BTL\FE_App\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
